@@ -1,22 +1,16 @@
-def get_user_input():
- x = input()
- y=x.split()
- return y
-def display_main_menu():
- print("display_main_menu")
+def calculate_bmi(height, weight):
+ print("Height = " + str(height))
+ print("Weight = " + str(weight))
 
-def main():
- get_user_input()
- display_main_menu()
- num_list = get_user_input()
+ bmi = weight / (height * height)
+ print("BMI = " + str(bmi))
 
-def display_main_menu():
- print("display_main_menu")
-
- def calc_average():
-     print ("calc_average")
+ if (bmi < 18.5):
+  print("Underweight")
+ elif (bmi > 25.0):
+  print("Overweight")
+ else:
+  print("Normal Weight")
 
 
-
-
-
+calculate_bmi(weight=57, height=1.73)
