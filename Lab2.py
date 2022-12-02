@@ -1,10 +1,12 @@
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
+    print("haha")
     display_main_menu()
     string_input = get_input()
     num_list = get_user_input(string_input)
     print(calc_average_temperature(num_list))
     print(calc_min_max_temperature(num_list))
+   
 
 
 def display_main_menu():
